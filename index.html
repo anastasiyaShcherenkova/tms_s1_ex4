@@ -4,266 +4,273 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
+    <header class = "container">
         <nav>
             <img src="./images/logo.svg" alt="Logo">
             <ul class="navigation_list button_text">
-                    <li><a href = "#feautures">Feautures</a></li>
-                    <li><a href = "#about" >About</a></li>
-                    <li><a href = "#pricing">Pricing</a></li>
-                    <li><a href = "#reviews">Reviews</a></li>
-                    <li><a href = "#contact">Contact</a></li>
+                <li><a href = "#feautures">Feautures</a></li>
+                <li><a href = "#about" >About</a></li>
+                <li><a href = "#pricing">Pricing</a></li>
+                <li><a href = "#reviews">Reviews</a></li>
+                <li><a href = "#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-        <main>
-            <section  class = "modern_axure">
-                <div>
+    <main class = "container">
+        <section class = "modern_axure">
+            <div class = "modern_axure_content flex_wrapper">
+                <div class = "modern_axure_text"> 
                     <img src="./images/AXIT.svg" alt="Logo">
                     <h2 class = "title title_dark modern_axure_title">MODERN AXURE TEMPLATE<br />FOR BEAUTIFUL PROTOTYPES</h2>
-                    <p class = "description description_dark">Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Aenean</p>
+                    <p class = "modern_axure_description description_dark">Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Aenean</p>
                     <button class="button button_text">Download</button>  
                 </div>
-                <div class = "application_form">
-                    <h3 class = "sub_title">Try Your <span>FREE</span> Trial Today</h3>
+                <form class = "application_form">
+                    <div class = "application_form_title"> 
+                        <h3 class = "sub_title">Try Your <span>FREE</span> Trial Today</h3> 
+                    </div>
                     <div class = "input_wrapper">
                         <div class="input-data">
                             <input type="text" required>
                             <div class="underline"></div> 
-                            <label>Name</label> 
+                            <label class = "description description_light">Name</label> 
+                        </div>
+                        <div class="input-data inputField.big">
+                            <input type="text" required>
+                            <div class="underline"></div> 
+                            <label class = "description description_light">Email</label> 
                         </div>
                         <div class="input-data">
                             <input type="text" required>
                             <div class="underline"></div> 
-                            <label>Email</label> 
-                        </div>
-                        <div class="input-data">
-                            <input type="text" required>
-                            <div class="underline"></div> 
-                            <label>Password</label> 
+                            <label class = "description description_light">Password</label> 
                         </div>
                     </div>
                     <button class = "button_filled button_text">Get started</button>
-                </div>
-            </section>
-            <section  class = "social_media">
-                <div class = "social_media_text">
-                    <h3 class = "sub_title">Social Media</h3>
-                    <p class = "description description_light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Aenean euismod bibendum laoreet.</p>
-                </div>
-                <div class = "social_media_icons">
-                    <a href = "#"><img src="./images/Social_media/facebook.svg" alt="Facebook"></a>
-                    <a href = "#"><img src="./images/Social_media/twitter.svg" alt="Twitter"></a>
-                    <a href = "#"><img src="./images/Social_media/google.svg" alt="Google"></a>
-                    <a href = "#"><img src="./images/Social_media/pinterest.svg" alt="Pinterest"></a>
-                    <a href = "#"><img src="./images/Social_media/instagram.svg" alt="Instagram"></a>
-                    <a href = "#"><img src="./images/Social_media/stumbleupon.svg" alt="Stumbleupon"></a>
-                    <a href = "#"><img src="./images/Social_media/wifi.png" alt="Wi-fi"></a>
-                </div>
-            </section>
-
-            <section class = "feautures" id = "feautures">
-                <div class = "feautures_buttons">
-                    <button class="button feautures_button sub_title">TAB 1</button>  
-                    <button class="button feautures_button sub_title">TAB 2</button>  
-                    <button class="button feautures_button sub_title">TAB 3</button>   
-                </div>
-                <div class = "feautures_text">
-                    <h3 class = "sub_title">Tabs with soft transitioning effect.</h3>
-                    <p class = "description description_light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit <br>
-                        amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et<br>
-                        magnis dis parturient montes.
-                    </p>
-                    <p class = "description description_light">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet.
-                    </p>
-                    <button class="button button_filled button_text">Download</button> 
-                </div>
-                <div class = "feautures_image">
-                    <img src="./images/city.svg" alt="Sprite of social networks"> 
-                </div>
-            </section>
-
-            <section class = "process" id = "about">
-                <div class = "process__body">
-                    <div class = "process__header">
-                        <h2 class = "process__title title title_light">WHY THIS IS AWESOME</h2>
-                        <p class = "process__description description  description _light">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                    </div>
-                    <div class = "process__cards">
-                        <div class = "process__card card">
-                            <div class = "card__circle"><img src="./images/lamp.svg" alt="Lamp"></div>
-                            <h3 class = "card__title">Thoughtful Design</h3>
-                            <p class = "card__description description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-                        </div>
-                        <div class = "process__card card">
-                            <div class = "card__circle"><img src="./images/keyboard.svg" alt="Keyboard"></div>
-                            <h3 class = "card__title">Well Crafted</h3>
-                            <p class = "card__description description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-                        </div>
-                        <div class = "process__card card">
-                            <div class = "card__circle"><img src="./images/lightning.svg" alt="lightning"></div>
-                            <h3 class = "card__title">Easy to Customize</h3>
-                            <p class = "card__description description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-                        </div>
-                    </div>
-                </div> 
-            </section>
-
-            <section class = "pricing" id = "pricing">
-                <h2 class = "title title_light">PRICING OPTIONS</h2>
-                <p class = "description description_light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class =  "pricing_cards">
-                    <ul class = "pricing_card">
-                        <li class = "sub_title">Basic</li>
-                        <li>$0</li>
-                        <li>Free for life</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                    </ul>
-                    <ul class = "pricing_card">
-                        <li class = "sub_title">Basic</li>
-                        <li>$0</li>
-                        <li>Free for life</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                    </ul>
-                    <ul class = "pricing_card">
-                        <li class = "sub_title">Basic</li>
-                        <li>$0</li>
-                        <li>Free for life</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                        <li class = "description description_light">1 gb of space</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class = "reviews" id = "reviews">
-                <h2 class = "title title_light">what our customers are saying</h2>
-                <p class = "description description_light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class = "cards_reviews">
-                    <div class = "card_reviews">
-                        <p class = "card_reviews_text description description_light">Lorem ipsum dolor sit amet,<br>  
-                            consectetur adipisicing elit. Doloribus<br> 
-                            accusamus expedita repellat similique<br> 
-                            odio aspernatur ex, architecto eaque<br>  
-                            quo suscipit.
-                        </p>
-                        <div class = "avatar">
-                            <img src="./images/avatar.svg" alt="Avatar">
-                            <div>
-                                <p class = "sub_title">Jeremy H.</p>
-                                <p class = "description description_light">Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "card_reviews">
-                        <p class = "card_reviews_text description description_light">Lorem ipsum dolor sit amet,<br>  
-                            consectetur adipisicing elit. Doloribus<br> 
-                            accusamus expedita repellat similique<br> 
-                            odio aspernatur ex, architecto eaque<br>  
-                            quo suscipit.
-                        </p>
-                        <div class = "avatar">
-                            <img src="./images/avatar.svg" alt="Avatar">
-                            <div>
-                                <p class = "sub_title">Jeremy H.</p>
-                                <p class = "description description_light">Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "card_reviews">
-                        <p class = "card_reviews_text description description_light">Lorem ipsum dolor sit amet,<br>  
-                            consectetur adipisicing elit. Doloribus<br> 
-                            accusamus expedita repellat similique<br> 
-                            odio aspernatur ex, architecto eaque<br>  
-                            quo suscipit.
-                        </p>
-                        <div class = "avatar">
-                            <img src="./images/avatar.svg" alt="Avatar">
-                            <div>
-                                <p class = "sub_title">Jeremy H.</p>
-                                <p class = "description description_light">Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class = "stylish_design">
-                <h2 class = "title title_dark">STYLISH AXURE DESIGN</h2>
-                <p class = "description description_dark">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
-                <button class="button button_text">Download</button> 
-            </section>
-
-            <section class = "contact_us" id = "contact">
-                <h2 class = "title title_light">contact us</h2>
-                <p class = "description description_light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class = "contact_us_message">
-                    <div>
-                        <div class="input-data">
-                            <input type="text" required>
-                            <div class="underline"></div> 
-                            <label>Name</label> 
-                        </div>
-                        <div class="input-data">
-                            <input type="text" required>
-                            <div class="underline"></div> 
-                            <label>Email</label> 
-                        </div>
-                        <div class="input-data">
-                            <input type="text" required>
-                            <div class="underline"></div> 
-                            <label>Password</label> 
-                        </div>
-                    </div>
-                    <div class = "message">
-                        <label>Message</label>
-                        <textarea cols="30" rows="5"></textarea>
-                    </div>
-                </div>
-                <button class="button button_filled button_text">Download</button> 
-            </section>
-        </main>
-
-        <footer>
-            <div>
-                <img src="./images/Social_media/facebook.svg" alt="Facebook">
-                <img src="./images/Social_media/twitter.svg" alt="Twitter">
-                <img src="./images/Social_media/google.svg" alt="Google">
-                <img src="./images/Social_media/pinterest.svg" alt="Pinterest">
-                <img src="./images/Social_media/instagram.svg" alt="Instagram">
-                <img src="./images/Social_media/stumbleupon.svg" alt="Stumbleupon">
-                <img src="./images/Social_media/wifi.png" alt="Wi-fi">
+                </form>
             </div>
-            <p class = "description">© 2015 Axure Themes</p>
-        </footer>
+        </section>
+        
+        <section  class = "social_media flex_wrapper">
+            <div class = "social_media_text">
+                <h3 class = "sub_title">Social Media</h3>
+                <p class = "description description_light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Aenean euismod bibendum laoreet.</p>
+            </div>
+            <div class = "social_media_icons">
+                <a href = "#"><img src="./images/Social_media/facebook.svg" alt="Facebook"></a>
+                <a href = "#"><img src="./images/Social_media/twitter.svg" alt="Twitter"></a>
+                <a href = "#"><img src="./images/Social_media/google.svg" alt="Google"></a>
+                <a href = "#"><img src="./images/Social_media/pinterest.svg" alt="Pinterest"></a>
+                <a href = "#"><img src="./images/Social_media/instagram.svg" alt="Instagram"></a>
+                <a href = "#"><img src="./images/Social_media/stumbleupon.svg" alt="Stumbleupon"></a>
+                <a href = "#"><img src="./images/Social_media/wifi.png" alt="Wi-fi"></a>
+            </div>
+        </section>
+
+        <section class = "feautures flex_wrapper" id = "feautures">
+            <div class = "feautures_buttons">
+                <button class="button feautures_button sub_title">TAB 1</button>  
+                <button class="button feautures_button sub_title">TAB 2</button>  
+                <button class="button feautures_button sub_title">TAB 3</button>   
+            </div>
+            <div class = "feautures_text">
+                <h3 class = "sub_title">Tabs with soft transitioning effect.</h3>
+                <p class = "description description_light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit <br>
+                    amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et<br>
+                    magnis dis parturient montes.
+                </p>
+                <p class = "description description_light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                    bibendum laoreet.
+                </p>
+                <button class="button button_filled button_text">Download</button> 
+            </div>
+            <div class = "feautures_image">
+                <img src="./images/city.svg" alt="Sprite of social networks"> 
+            </div>
+        </section>
+
+        <section class = "process" id = "about">
+            <div class = "process__body">
+                <div class = "process__header">
+                    <h2 class = "process__title title title_light">WHY THIS IS AWESOME</h2>
+                    <p class = "process__description description  description _light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class = "process__cards">
+                    <div class = "process__card card">
+                        <div class = "card__circle"><img src="./images/lamp.svg" alt="Lamp"></div>
+                        <h3 class = "card__title">Thoughtful Design</h3>
+                        <p class = "card__description description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                    <div class = "process__card card">
+                        <div class = "card__circle"><img src="./images/keyboard.svg" alt="Keyboard"></div>
+                        <h3 class = "card__title">Well Crafted</h3>
+                        <p class = "card__description description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                    <div class = "process__card card">
+                        <div class = "card__circle"><img src="./images/lightning.svg" alt="lightning"></div>
+                        <h3 class = "card__title">Easy to Customize</h3>
+                        <p class = "card__description description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class = "pricing" id = "pricing">
+            <h2 class = "title title_light">PRICING OPTIONS</h2>
+            <p class = "description description_light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class =  "pricing_cards flex_wrapper">
+                <ul class = "pricing_card">
+                    <li class = "sub_title">Basic</li>
+                    <li>$0</li>
+                    <li>Free for life</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                </ul>
+                <ul class = "pricing_card">
+                    <li class = "sub_title">Basic</li>
+                    <li>$0</li>
+                    <li>Free for life</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                </ul>
+                <ul class = "pricing_card">
+                    <li class = "sub_title">Basic</li>
+                    <li>$0</li>
+                    <li>Free for life</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                    <li class = "description description_light">1 gb of space</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class = "reviews" id = "reviews">
+            <h2 class = "title title_light">what our customers are saying</h2>
+            <p class = "description description_light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class = "cards_reviews flex_wrapper">
+                <div class = "card_reviews">
+                    <p class = "card_reviews_text description description_light">Lorem ipsum dolor sit amet,<br>  
+                        consectetur adipisicing elit. Doloribus<br> 
+                        accusamus expedita repellat similique<br> 
+                        odio aspernatur ex, architecto eaque<br>  
+                        quo suscipit.
+                    </p>
+                    <div class = "avatar">
+                        <img src="./images/avatar.svg" alt="Avatar">
+                        <div>
+                            <p class = "sub_title">Jeremy H.</p>
+                            <p class = "description description_light">Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card_reviews">
+                    <p class = "card_reviews_text description description_light">Lorem ipsum dolor sit amet,<br>  
+                        consectetur adipisicing elit. Doloribus<br> 
+                        accusamus expedita repellat similique<br> 
+                        odio aspernatur ex, architecto eaque<br>  
+                        quo suscipit.
+                    </p>
+                    <div class = "avatar">
+                        <img src="./images/avatar.svg" alt="Avatar">
+                        <div>
+                            <p class = "sub_title">Jeremy H.</p>
+                            <p class = "description description_light">Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card_reviews">
+                    <p class = "card_reviews_text description description_light">Lorem ipsum dolor sit amet,<br>  
+                        consectetur adipisicing elit. Doloribus<br> 
+                        accusamus expedita repellat similique<br> 
+                        odio aspernatur ex, architecto eaque<br>  
+                        quo suscipit.
+                    </p>
+                    <div class = "avatar">
+                        <img src="./images/avatar.svg" alt="Avatar">
+                        <div>
+                            <p class = "sub_title">Jeremy H.</p>
+                            <p class = "description description_light">Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "stylish_design">
+            <h2 class = "title title_dark">STYLISH AXURE DESIGN</h2>
+            <p class = "description description_dark">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+            <button class="button button_text">Download</button> 
+        </section>
+
+        <section class = "contact_us" id = "contact">
+            <h2 class = "title title_light">contact us</h2>
+            <p class = "description description_light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <form class = "contact_us_message flex_wrapper">
+                <div class = "contact_us_input">
+                    <div class="input-data input-data_middle">
+                        <input type="text" required>
+                        <div class="underline"></div> 
+                        <label class = "description description_light">Name</label> 
+                    </div>
+                    <div class="input-data input-data_middle">
+                        <input type="text" required>
+                        <div class="underline"></div> 
+                        <label class = "description description_light">Email</label> 
+                    </div>
+                    <div class="input-data input-data_big">
+                        <input type="text" required>
+                        <div class="underline"></div> 
+                        <label class = "description description_light">Password</label> 
+                    </div>
+                </div>
+                <div class = "message">
+                    <label class = "description description_light">Message</label>
+                    <textarea cols="30" rows="5"></textarea>
+                </div>
+
+            </form>
+            <button class="button button_filled button_text">Download</button> 
+        </section>
+    </main>
+
+    <footer class = "container">
+        <div>
+            <img src="./images/Social_media/facebook.svg" alt="Facebook">
+            <img src="./images/Social_media/twitter.svg" alt="Twitter">
+            <img src="./images/Social_media/google.svg" alt="Google">
+            <img src="./images/Social_media/pinterest.svg" alt="Pinterest">
+            <img src="./images/Social_media/instagram.svg" alt="Instagram">
+            <img src="./images/Social_media/stumbleupon.svg" alt="Stumbleupon">
+            <img src="./images/Social_media/wifi.png" alt="Wi-fi">
+        </div>
+        <p class = "description">© 2015 Axure Themes</p>
+    </footer>
 </body>
-</html>

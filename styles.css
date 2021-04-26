@@ -5,9 +5,12 @@
 }
 
 body {
-    margin: 0 auto;
-    max-width: 1400px;
     width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .title {
@@ -157,14 +160,16 @@ nav {
     color: rgb(255, 255, 255)
 }
 
+.flex_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .modern_axure {
     background-image: url("./images/header_background.svg");
     height: 601px;
     position: relative;
     z-index: 1;
-    padding: 109px 111px 0 110px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .modern_axure::after {
@@ -179,8 +184,18 @@ nav {
     z-index: -1;
 }
 
+.modern_axure_content {
+    padding: 108px 110px 101px 110px;
+}
+
+.modern_axure_text img {
+    width: 129px;
+    height: 70px;
+}
+
 .modern_axure_title {
-    padding-top: 32px;
+    margin-top: 32px;
+    padding-bottom: 44px;
 }
 
 .modern_axure_title::after {
@@ -189,62 +204,87 @@ nav {
     left: 0;
 }
 
-.modern_axure button {
+.modern_axure_description {
+    margin-top: 39px;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    line-height: 19px;
+}
+
+.modern_axure_text button {
     margin-top: 39px;
 }
 
 .application_form {
-    margin-top: 2px;
     width: 370px;
-    height: 370px;
+    margin-bottom: 22px;
     border-radius: 8px;
     background-color: #FFFFFF;
     text-align: center;
     overflow: hidden;
 }
 
+.application_form_title {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 span {
     color: #EC7979;
 }
-
-div .application_form h3 {
-    margin-top: 18px;
-    margin-bottom: 40px;
-}
-
+ 
 .input_wrapper {
-    padding: 0 59px;
+    padding: 25px 59px;
 }
-
-.application_form input {
-    height: 171px;
-    width: 252px;
-}
-
-.application_form .input-data{
-    width: 252px;
-    height: 57px;
-    padding-top: 28.5px;
+ 
+.input-data {
+    margin-top: 27px;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    height: 30px;
     position: relative;
 }
 
-.input-data input{
-    height: 50%;
+.input-data_middle {
+    margin-top: 51px;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    height: 32px;
+    position: relative;
+}
+
+.input-data_big {
+    margin-top: 51px;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    height: 46px;
+    position: relative;
+}
+
+.input-data input {
+    height: 1005;
     width: 100%;
     border: none;
-    font-size: 17px;
+    font-size: 14px;
     border-bottom: 2px solid #86878B;
     outline: 0;
 }
 
-.application_form .input-data input{
+.input-data input{
     height: 100%;
 }
 
 .input-data input:focus ~ label,
 .input-data input:valid ~ label{
-    transform: translateY(-20px);
-    font-size: 15px;
+    transform: translateY(-100%);
+    font-size: 14px;
     color: #EC7979;
     outline: 0;
     outline-offset: 0;
@@ -252,7 +292,7 @@ div .application_form h3 {
 
 .input-data label{
     position: absolute;
-    bottom: 10px;
+    bottom: 14px;
     left: 0;
     color: #86878B;
     pointer-events: none;
@@ -281,27 +321,24 @@ div .application_form h3 {
 .input-data input:valid ~ .underline:before{
     transform: scaleX(1);
 }
-  
+
 .application_form button {
-    margin-top: 61px;
+    margin-top: 39px;
     width: 100%; 
     height: 54px; 
-
 }
 
 .social_media {
     height: 110px;
     background-color: #F8EFEF;
     padding: 0 111px;
-    display: flex;
-    justify-content: space-between; 
 }
 
 .social_media_text {
     padding-top: 14px;
 }
 
-div .social_media_text p {
+.social_media_text p {
     margin-top: 14px;
 }
 
@@ -311,6 +348,7 @@ div .social_media_text p {
 
 .social_media_icons img{
     margin-left: 40px;
+    width: 8%;
 }
 
 .social_media_icons img:hover {
@@ -321,13 +359,13 @@ div .social_media_text p {
 .feautures {
     height: 600px;
     padding: 100px 117px 0 111px ;
-    display: flex;
-    justify-content: space-between;
 }
+
 .feautures h3+p {
     margin-top: 58px;
     margin-bottom: 14px;
 }
+
 .feautures_buttons {
     margin: 25px 0 0 0;
     width: 112px;
@@ -355,7 +393,7 @@ div .social_media_text p {
     text-transform: uppercase;
 }
 
-div .feautures_text p:nth-child(2) {
+.feautures_text p:nth-child(2) {
     margin-bottom: 19px;
 }
 
@@ -414,8 +452,6 @@ div .feautures_text p:nth-child(2) {
 .pricing_cards {
     margin-top: 47px;
     padding: 0 112px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .pricing_card {
@@ -471,8 +507,6 @@ div .feautures_text p:nth-child(2) {
 }
 
 .cards_reviews {
-    display: flex;
-    text-align: center;
     padding: 67px 83px 0 101px;
 }
 
@@ -537,24 +571,11 @@ div .feautures_text p:nth-child(2) {
 
 .contact_us_message {
     margin-top: 95px;
-    display: flex;
-    justify-content: space-between;
     padding: 0 111px; 
 }
 
-.contact_us_message input {
-    margin-top: 50px;
-    height: 230px;
-    width: 480px;
-}
-
-.contact_us_message .input-data{
+.contact_us_input {
     width: 478px;
-    position: relative;
-}
-
-.contact_us_message .input-data input{
-    height: 50%;
 }
 
 .message {
