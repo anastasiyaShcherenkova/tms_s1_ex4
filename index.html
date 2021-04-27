@@ -39,19 +39,19 @@
                     </div>
                     <div class = "input_wrapper">
                         <div class="input-data">
-                            <input type="text" required>
+                            <input type="text" id = "name" required>
                             <div class="underline"></div> 
-                            <label class = "description description_light">Name</label> 
+                            <label class = "description description_light for = "name">Name</label> 
                         </div>
                         <div class="input-data inputField.big">
-                            <input type="text" required>
+                            <input type="email" id = "mail" required>
                             <div class="underline"></div> 
-                            <label class = "description description_light">Email</label> 
+                            <label class = "description description_light" for = "mail">Email</label> 
                         </div>
                         <div class="input-data">
-                            <input type="text" required>
+                            <input type="password" id = "password" required>
                             <div class="underline"></div> 
-                            <label class = "description description_light">Password</label> 
+                            <label class = "description description_light" for = "password">Password</label> 
                         </div>
                     </div>
                     <button class = "button_filled button_text">Get started</button>
@@ -132,39 +132,45 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class =  "pricing_cards flex_wrapper">
-                <ul class = "pricing_card">
-                    <li class = "sub_title">Basic</li>
-                    <li>$0</li>
-                    <li>Free for life</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                </ul>
-                <ul class = "pricing_card">
-                    <li class = "sub_title">Basic</li>
-                    <li>$0</li>
-                    <li>Free for life</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                </ul>
-                <ul class = "pricing_card">
-                    <li class = "sub_title">Basic</li>
-                    <li>$0</li>
-                    <li>Free for life</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                    <li class = "description description_light">1 gb of space</li>
-                </ul>
+                <div  class = "pricing_card">
+                    <div class = "sub_title">Basic</div>
+                    <div>$0</div>
+                    <div>Free for life</div>
+                    <ul>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                    </ul>
+                </div>
+                <div  class = "pricing_card">
+                    <div class = "sub_title">Basic</div>
+                    <div>$0</div>
+                    <div>Free for life</div>
+                    <ul>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                    </ul>
+                </div>
+                <div  class = "pricing_card">
+                    <div class = "sub_title">Basic</div>
+                    <div>$0</div>
+                    <div>Free for life</div>
+                    <ul>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                        <li class = "description description_light">1 gb of space</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -233,31 +239,32 @@
             <p class = "description description_light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <form class = "contact_us_message flex_wrapper">
-                <div class = "contact_us_input">
-                    <div class="input-data input-data_middle">
-                        <input type="text" required>
-                        <div class="underline"></div> 
-                        <label class = "description description_light">Name</label> 
+            <form>
+                <div class = "contact_us_message flex_wrapper">
+                    <div class = "contact_us_input">
+                        <div class="input-data input-data_middle">
+                            <input type="text" id = "name" required>
+                            <div class="underline"></div> 
+                            <label class = "description description_light" for="name">Name</label> 
+                        </div>
+                        <div class="input-data input-data_middle">
+                            <input type="email" id = "mail" required>
+                            <div class="underline"></div> 
+                            <label class = "description description_light" for="mail">Email</label> 
+                        </div>
+                        <div class="input-data input-data_big">
+                            <input type="password" id = "password" required>
+                            <div class="underline"></div> 
+                            <label class = "description description_light" for="password">Password</label> 
+                        </div>
                     </div>
-                    <div class="input-data input-data_middle">
-                        <input type="text" required>
-                        <div class="underline"></div> 
-                        <label class = "description description_light">Email</label> 
-                    </div>
-                    <div class="input-data input-data_big">
-                        <input type="text" required>
-                        <div class="underline"></div> 
-                        <label class = "description description_light">Password</label> 
+                    <div class = "message">
+                        <label class = "description description_light" for = "msg">Message</label>
+                        <textarea id = "msg" cols="30" rows="5"></textarea>
                     </div>
                 </div>
-                <div class = "message">
-                    <label class = "description description_light">Message</label>
-                    <textarea cols="30" rows="5"></textarea>
-                </div>
-
+                <button class="button button_filled button_text">Download</button> 
             </form>
-            <button class="button button_filled button_text">Download</button> 
         </section>
     </main>
 
